@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 2
 Title "PMI-BOB²"
 Date "2021-03-30"
-Rev "V1.1"
+Rev "V1.2"
 Comp "Paderborn University - Measurement Engineering Group"
 Comment1 ""
 Comment2 ""

@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 2 2
 Title "PMI-BOB²"
 Date "2021-03-30"
-Rev "V1.0"
+Rev "V1.2"
 Comp "Paderborn University - Measurement Engineering Group"
 Comment1 ""
 Comment2 ""
@@ -54,19 +54,6 @@ F 3 "~" H 7300 1350 50  0001 C CNN
 	1    7300 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP?
-U 1 1 6072B40C
-P 8250 800
-AR Path="/6072B40C" Ref="JP?"  Part="1" 
-AR Path="/60726D93/6072B40C" Ref="JP4"  Part="1" 
-F 0 "JP4" H 8250 600 50  0000 C CNN
-F 1 "OW1_3V3_EN" H 8250 700 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 8250 800 50  0001 C CNN
-F 3 "~" H 8250 800 50  0001 C CNN
-	1    8250 800 
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7300 1200 7300 1150
 Wire Wire Line
@@ -76,18 +63,18 @@ Wire Wire Line
 $Comp
 L Sensor_Temperature:DS18B20 U?
 U 1 1 6072B417
-P 8900 1200
+P 9350 1200
 AR Path="/6072B417" Ref="U?"  Part="1" 
 AR Path="/60726D93/6072B417" Ref="U2"  Part="1" 
-F 0 "U2" H 9150 1450 50  0000 R CNN
-F 1 "DS18B20" H 8850 950 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 7900 950 50  0001 C CNN
-F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 8750 1450 50  0001 C CNN
-F 4 "DS 18B20" H 8900 1200 50  0001 C CNN "Reichelt Part No"
-F 5 "700-DS18B20+" H 8900 1200 50  0001 C CNN "Mouser Part No "
-F 6 "Maxim Integrated " H 8900 1200 50  0001 C CNN "Manufacturer"
-F 7 "DS18B20+ " H 8900 1200 50  0001 C CNN " Manufacturer Part No "
-	1    8900 1200
+F 0 "U2" H 9600 1450 50  0000 R CNN
+F 1 "DS18B20" H 9300 950 50  0000 R CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8350 950 50  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/DS18B20.pdf" H 9200 1450 50  0001 C CNN
+F 4 "DS 18B20" H 9350 1200 50  0001 C CNN "Reichelt Part No"
+F 5 "700-DS18B20+" H 9350 1200 50  0001 C CNN "Mouser Part No "
+F 6 "Maxim Integrated " H 9350 1200 50  0001 C CNN "Manufacturer"
+F 7 "DS18B20+ " H 9350 1200 50  0001 C CNN " Manufacturer Part No "
+	1    9350 1200
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -146,8 +133,6 @@ Wire Wire Line
 	8050 850  8050 800 
 Connection ~ 8050 800 
 Wire Wire Line
-	8050 800  8100 800 
-Wire Wire Line
 	7650 850  7650 800 
 Wire Wire Line
 	7650 800  8050 800 
@@ -158,33 +143,33 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 6072B440
-P 8900 1550
+P 9350 1550
 AR Path="/6072B440" Ref="#PWR?"  Part="1" 
 AR Path="/60726D93/6072B440" Ref="#PWR030"  Part="1" 
-F 0 "#PWR030" H 8900 1300 50  0001 C CNN
-F 1 "GND" H 8905 1377 50  0000 C CNN
-F 2 "" H 8900 1550 50  0001 C CNN
-F 3 "" H 8900 1550 50  0001 C CNN
-	1    8900 1550
+F 0 "#PWR030" H 9350 1300 50  0001 C CNN
+F 1 "GND" H 9355 1377 50  0000 C CNN
+F 2 "" H 9350 1550 50  0001 C CNN
+F 3 "" H 9350 1550 50  0001 C CNN
+	1    9350 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8900 1500 8900 1550
+	9350 1500 9350 1550
 $Comp
 L power:GND #PWR?
 U 1 1 6072B450
-P 9950 1550
+P 10400 1550
 AR Path="/6072B450" Ref="#PWR?"  Part="1" 
 AR Path="/60726D93/6072B450" Ref="#PWR037"  Part="1" 
-F 0 "#PWR037" H 9950 1300 50  0001 C CNN
-F 1 "GND" H 9955 1377 50  0000 C CNN
-F 2 "" H 9950 1550 50  0001 C CNN
-F 3 "" H 9950 1550 50  0001 C CNN
-	1    9950 1550
+F 0 "#PWR037" H 10400 1300 50  0001 C CNN
+F 1 "GND" H 10405 1377 50  0000 C CNN
+F 2 "" H 10400 1550 50  0001 C CNN
+F 3 "" H 10400 1550 50  0001 C CNN
+	1    10400 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9550 1150 9500 1150
+	10000 1150 9950 1150
 Wire Wire Line
 	7300 750  7300 800 
 Wire Wire Line
@@ -193,9 +178,6 @@ Connection ~ 7650 800
 Connection ~ 7300 800 
 Wire Wire Line
 	7300 800  7300 850 
-Wire Wire Line
-	8900 800  8400 800 
-Connection ~ 8900 800 
 $Comp
 L Jumper:SolderJumper_2_Open JP?
 U 1 1 6072B465
@@ -291,7 +273,7 @@ Wire Wire Line
 Wire Wire Line
 	3400 2650 3450 2650
 $Comp
-L Pmod-Interface-emt:Pmod-Interface-I2C6 J?
+L pmi-hw-bob2-rescue:Pmod-Interface-I2C6-Pmod-Interface-emt J?
 U 1 1 6072B497
 P 5200 1200
 AR Path="/6072B497" Ref="J?"  Part="1" 
@@ -580,9 +562,9 @@ Wire Wire Line
 Wire Wire Line
 	5150 2500 5200 2500
 Wire Wire Line
-	9950 1550 9950 1500
+	10400 1550 10400 1500
 Wire Wire Line
-	8900 800  9950 800 
+	9350 800  10400 800 
 Wire Wire Line
 	5650 2150 5650 2100
 $Comp
@@ -663,8 +645,6 @@ Wire Notes Line
 	2800 500  6550 500 
 Wire Notes Line
 	2800 500  2800 3200
-Wire Notes Line
-	6600 500  10200 500 
 Text HLabel 1350 1150 0    50   Output ~ 0
 io_io_adc_1
 Text HLabel 1350 1250 0    50   Output ~ 0
@@ -675,14 +655,14 @@ Text HLabel 1350 1450 0    50   BiDi ~ 0
 io_io_io_2
 Text HLabel 7150 1550 0    50   BiDi ~ 0
 io_ow1
-Text HLabel 8550 1200 0    50   Input ~ 0
+Text HLabel 9000 1200 0    50   Input ~ 0
 io_ow1
-Text HLabel 9500 1150 0    50   Input ~ 0
+Text HLabel 9950 1150 0    50   Input ~ 0
 io_ow1
 Wire Wire Line
-	8900 800  8900 900 
+	9350 800  9350 900 
 Wire Wire Line
-	8550 1200 8600 1200
+	9000 1200 9050 1200
 Text HLabel 4850 1250 0    50   BiDi ~ 0
 io_i2c1_scl
 Text HLabel 4850 1350 0    50   BiDi ~ 0
@@ -700,28 +680,17 @@ io_i2c1_scl
 Text HLabel 3400 1550 0    50   BiDi ~ 0
 io_i2c1_sda
 $Comp
-L Bobs-emt:Bob-DS18B20 J9
+L pmi-hw-bob2-rescue:Bob-DS18B20-Bobs-emt J9
 U 1 1 606B34A6
-P 9850 1150
+P 10300 1150
 AR Path="/606B34A6" Ref="J9"  Part="1" 
 AR Path="/60726D93/606B34A6" Ref="J9"  Part="1" 
-F 0 "J9" H 9750 1400 50  0000 L CNN
-F 1 "Bob-DS18B20" V 10050 850 50  0000 L CNN
-F 2 "Bobs-emt:Bob_DS18B20_Host" H 9750 1150 50  0001 C CNN
-F 3 "~" H 9750 1150 50  0001 C CNN
-	1    9850 1150
+F 0 "J9" H 10200 1400 50  0000 L CNN
+F 1 "Bob-DS18B20" V 10500 850 50  0000 L CNN
+F 2 "Bobs-emt:Bob_DS18B20_Host" H 10200 1150 50  0001 C CNN
+F 3 "~" H 10200 1150 50  0001 C CNN
+	1    10300 1150
 	1    0    0    -1  
-$EndComp
-$Comp
-L Bobs-emt:Bob-GY271 J10
-U 1 1 60648D46
-P 5550 2500
-F 0 "J10" H 5650 2750 50  0000 R CNN
-F 1 "Bob-GY271" V 5300 2700 50  0000 R CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5700 2300 50  0001 C CNN
-F 3 "~" H 5700 2300 50  0001 C CNN
-	1    5550 2500
-	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -808,11 +777,9 @@ Wire Wire Line
 Wire Wire Line
 	7750 1700 7750 1750
 Wire Notes Line
-	10200 500  10200 2000
-Wire Notes Line
 	2750 500  550  500 
 $Comp
-L Pmod-Interface-emt:Pmod-Interface-GPIO12 J3
+L pmi-hw-bob2-rescue:Pmod-Interface-GPIO12-Pmod-Interface-emt J3
 U 1 1 606D88A7
 P 1850 1500
 F 0 "J3" H 1650 2050 50  0000 R CNN
@@ -1113,8 +1080,6 @@ Wire Notes Line
 Wire Notes Line
 	3900 4200 3900 3250
 Wire Notes Line
-	6600 2000 10200 2000
-Wire Notes Line
 	3900 3250 2800 3250
 Wire Notes Line
 	2800 3250 2800 4200
@@ -1165,7 +1130,7 @@ io_spi1_miso
 NoConn ~ 5100 5250
 NoConn ~ 5100 5150
 $Comp
-L Bobs-emt:Bob_GY291_ADXL345 J8
+L pmi-hw-bob2-rescue:Bob_GY291_ADXL345-Bobs-emt J8
 U 1 1 6065B27C
 P 5500 5300
 F 0 "J8" H 5350 5700 50  0000 L CNN
@@ -1260,7 +1225,7 @@ Wire Wire Line
 Wire Wire Line
 	7450 5250 7350 5250
 $Comp
-L Pmod-Interface-emt:Pmod-Interface-SPI6 J?
+L pmi-hw-bob2-rescue:Pmod-Interface-SPI6-Pmod-Interface-emt J?
 U 1 1 6072B519
 P 7800 5300
 AR Path="/6072B519" Ref="J?"  Part="1" 
@@ -1390,7 +1355,7 @@ Wire Wire Line
 Wire Wire Line
 	7100 4850 7150 4850
 $Comp
-L Pmod-Interface-emt:Pmod-Interface-UART6 J6
+L pmi-hw-bob2-rescue:Pmod-Interface-UART6-Pmod-Interface-emt J6
 U 1 1 607A98E8
 P 8300 2750
 F 0 "J6" H 8400 3050 50  0000 R CNN
@@ -1670,4 +1635,58 @@ Wire Wire Line
 	6900 5150 6900 5000
 Wire Notes Line
 	550  500  550  4450
+$Comp
+L pmi-hw-bob2-rescue:Bob-GY271-Bobs-emt J10
+U 1 1 60648D46
+P 5550 2500
+F 0 "J10" H 5650 2750 50  0000 R CNN
+F 1 "Bob-GY271" V 5300 2700 50  0000 R CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical" H 5700 2300 50  0001 C CNN
+F 3 "~" H 5700 2300 50  0001 C CNN
+	1    5550 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Jumper:SolderJumper_3_Open JP4
+U 1 1 61BDE36C
+P 8500 1050
+F 0 "JP4" V 8400 850 50  0000 L CNN
+F 1 "ParasiticPowerBridge" V 8200 650 50  0000 L CNN
+F 2 "Jumper:SolderJumper-3_P2.0mm_Open_TrianglePad1.0x1.5mm_NumberLabels" H 8500 1050 50  0001 C CNN
+F 3 "~" H 8500 1050 50  0001 C CNN
+	1    8500 1050
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8500 800  8500 850 
+Wire Wire Line
+	8050 800  8500 800 
+Wire Wire Line
+	8650 1050 8750 1050
+Wire Wire Line
+	8750 1050 8750 800 
+$Comp
+L power:GND #PWR?
+U 1 1 61C119C3
+P 8500 1300
+AR Path="/61C119C3" Ref="#PWR?"  Part="1" 
+AR Path="/60726D93/61C119C3" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 8500 1050 50  0001 C CNN
+F 1 "GND" H 8505 1127 50  0000 C CNN
+F 2 "" H 8500 1300 50  0001 C CNN
+F 3 "" H 8500 1300 50  0001 C CNN
+	1    8500 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1250 8500 1300
+Wire Wire Line
+	8750 800  9350 800 
+Connection ~ 9350 800 
+Wire Notes Line
+	6600 2000 10650 2000
+Wire Notes Line
+	10650 2000 10650 500 
+Wire Notes Line
+	6600 500  10650 500 
 $EndSCHEMATC

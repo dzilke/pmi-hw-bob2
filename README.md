@@ -15,7 +15,11 @@ found [here](bom/ibom.html).
 # Changelog
 
 ## V1.0
-* First prototype.
+* First prototype
 
 ## V1.1
-* First release.
+* First release
+
+## V1.2
+* onewire: Add parasitic power bridge
+* pcb: Increase spacing between power section and morpho socket
