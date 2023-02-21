@@ -14,12 +14,17 @@ found [here](bom/ibom.html).
 
 # Changelog
 
-## V1.0
+## 1.0
 * First prototype
 
-## V1.1
+## 1.1
 * First release
 
-## V1.2
+## 1.2
 * onewire: Add parasitic power bridge
 * pcb: Increase spacing between power section and morpho socket
+
+## 1.3
+* Convert project to Kicad 6
+* Round pcb corners
+* Update linear regulator from MCP1703T-3302E/CB to MCP1703AT-3302E/CB

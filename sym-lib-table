@@ -1,3 +1,0 @@
-(sym_lib_table
-  (lib (name pmi-hw-bob2-rescue)(type Legacy)(uri ${KIPRJMOD}/pmi-hw-bob2-rescue.lib)(options "")(descr ""))
-)
