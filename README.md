@@ -9,8 +9,9 @@ There are interfaces for GY-291 (ADXL345 accelerometer) and GY-271 (HMC5883L mag
 
 ![BOB2-front](pics/bob-front.png)
 
-An interactive html BOM file with pcb layout and material placement can be
-found [here](bom/ibom.html).
+# Interactive BOM
+
+An interactive html BOM page with pcb layout and material placement can be found [here](https://emtpb.github.io/pmi-hw-bob2/bom/ibom.html).
 
 # Changelog
 
